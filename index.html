@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jogo da velha</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    <link rel="stylesheet" href="estilo/style.css">
+    
+</head>
+<body>
+        
+    <section id="boas">
+    <h1>Jogo da velha </h1>
+       
+     
+        <main>
+          
+            <div  class="input">
+                    <input type="text" id="jogador1" placeholder="Name" >
+                    <i class='bx bx-x' id="jog1"></i>
+                    <br>
+                    <input type="text" id="jogador2" placeholder= "Name" >
+                    <i class='bx bx-radio-circle' id="jog2"></i>
+                </div>
+                <div class="rodar">
+                    <i onclick="inverter()" class='bx bx-rotate-right' id="inv"></i>
+                </div>
+            
+        </main>
+        <input type="button" value="iniciar" id="inicio" onclick="dsa()">
+    </section>
+
+    <section id="inicioJ">
+        <div id="vez">
+            x
+        </div>
+        <table>
+            <tr>
+                <td id="c1" >1</td>
+                <td id="c2">1</td>
+                <td id="c3">1</td>
+            </tr>
+            <tr>
+                <td id="c4">1</td>
+                <td id="c5">1</td>
+                <td id="c6">1</td>
+            </tr>
+            <tr>
+                <td id="c7">1</td>
+                <td id="c8">1</td>
+                <td id="c9">1</td>
+            </tr>
+        </table>
+    </section>
+
+
+
+
+
+
+    <script>
+
+
+
+        var j1 = window.document.getElementById('jog1')
+        var j2 = window.document.getElementById('jog2') 
+       function dsa(){
+        var fec= window.document.getElementById('boas')
+        fec.style.display='none'
+        
+       }
+
+        function inverter(){ 
+
+            var reserva = j1.className
+            j1.className = j2.className
+            j2.className=reserva
+
+
+        }
+
+
+
+    </script>
+</body>
+</html>
