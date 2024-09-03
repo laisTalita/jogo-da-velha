@@ -1,17 +1,22 @@
 
-
-        var j1 = window.document.getElementById('jog1')
-        var j2 = window.document.getElementById('jog2') 
+        var sec= window.document.getElementById('vence')
+        var j1 = window.document.getElementById('jogador1')
+        var j2 = window.document.getElementById('jogador2')
         var vez = window.document.getElementById('vez')
         var ganhou = false
         var tds=window.document.getElementsByClassName('color')
         var jogadorA='X'
+        var nomJ,n1,n2
 
         function atualizaVez() {
             if (jogadorA=='X') {
                  vez.innerHTML=`<i class='bx bx-x'></i>`
+                 vez.style.backgroundColor='rgba(60, 78, 12, 0.446)'
+                 nomJ =n1
             }else{
                 vez.innerHTML=`<i class='bx bx-radio-circle'></i>`
+                vez.style.backgroundColor=' rgba(79, 17, 17, 0.469)'
+                nomJ=n2
             }
         }
         function inverter() {
@@ -29,20 +34,29 @@
                 var[a,b,c] =combinacao
                 if (tds[a].innerHTML ===tds[b].innerHTML && tds[b].innerHTML === tds[c].innerHTML && tds[a].innerHTML !=='') {
                     ganhou = true
-                   vez.innerHTML=` ${tds[a].innerHTML}ganhou!`
+                    exibirTelaF(`${nomJ} ganhou`)
                     return   
                 }
-                      
             }
             if ([...tds].every(cell=> cell.innerHTML!=='')) {
                 ganhou =true
-                vez.innerHTML =` ${tds[a].innerHTML}empate`
+                exibirTelaF(`empate`)
                 
             }
         }
+
+        function exibirTelaF(mensagem){
+            document.getElementById('boas').style.display='none'
+            document.getElementById('result').innerHTML =mensagem
+            document.getElementById('final').style.display='block'
+
+        }
+       
         function desap() {
         var boas = document.getElementById('boas');
         boas.style.display = 'none'; 
+        n1=j1.value
+        n2=j2.value
 
         atualizaVez();
         for (let i = 0; i < tds.length; i++) {

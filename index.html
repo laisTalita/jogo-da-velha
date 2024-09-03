@@ -11,10 +11,8 @@
 <body>
         
     <section id="boas">
-    <h1>Jogo da velha </h1>
-       
-     
-        <main>
+        <h1>Jogo da velha </h1>
+        <main id="conteudoP">
           
             <div  class="input">
                     <input type="text" id="jogador1" placeholder="Name" >
@@ -23,36 +21,41 @@
                     <input type="text" id="jogador2" placeholder= "Name" >
                     <i class='bx bx-radio-circle' id="jog2"></i>
                 </div>
-              
-            
         </main>
-        <input type="button" value="iniciar" id="inicio" onclick="desap()">
+        <button type="submit" id="inicio" onclick="desap()"> iniciar</button>
     </section>
 
     <section id="inicioJ">
-
-        <div id="vez">
-        
-
-        </div>
-        <table>
-            <tr>
-                <td id="c1" class="color"></td>
-                <td id="c2" class="color"></td>
-                <td id="c3" class="color"></td>
-            </tr>
-            <tr>
-                <td id="c4" class="color"></td>
-                <td id="c5" class="color"></td>
-                <td id="c6" class="color"></td>
-            </tr>
-            <tr>
-                <td id="c7" class="color"></td>
-                <td id="c8" class="color"></td>
-                <td id="c9" class="color"></td>
-            </tr>
-        </table>
-        <!-- <button id="rei">reiniciar</button> -->
+            <div id="vez">
+            </div>
+            <table>
+                <tr>
+                    <td id="c1" class="color"></td>
+                    <td id="c2" class="color"></td>
+                    <td id="c3" class="color"></td>
+                </tr>
+                <tr>
+                    <td id="c4" class="color"></td>
+                    <td id="c5" class="color"></td>
+                    <td id="c6" class="color"></td>
+                </tr>
+                <tr>
+                    <td id="c7" class="color"></td>
+                    <td id="c8" class="color"></td>
+                    <td id="c9" class="color"></td>
+                </tr>
+            </table>
+       
+    </section>
+    
+    <section id="final"> 
+        <main id="f">
+            <div>
+                <h2 id="result"></h2>
+                <a href="index.html"><button> Jogar novamente </button></a>
+                
+            </div>
+        </main>
     </section>
 
 

@@ -11,7 +11,7 @@ body{
 #boas{
     border-radius: 10px;
     min-width: 330px;
-    width: 60%;
+    width: 65%;
     height: 35vh;
     min-height: 280px;
     text-align: center;
@@ -25,7 +25,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-main{
+#conteudoP{
     margin: 40px auto;
     display: flex;
     justify-content: center;
@@ -49,15 +49,7 @@ h1{
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.464);
 }
 
-#inv{
-    color: white;
-    padding: 2px;
-    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.315);
-}
-#inv:hover{
-    background-color: rgba(188, 184, 184, 0.212);
-    cursor: pointer;    
-}
+
 input[type=text]{
     background-color: transparent;
     color:  rgb(248, 248, 216);
@@ -69,37 +61,39 @@ input[type=text]{
     border-bottom: 1px solid  rgba(219, 219, 153, 0.953);
 }
 
-input[type=button]{
+#inicio{
     border-radius: 10px;
     font-size: 1.1em;
     width: 18%;
-    padding: 1px;
+    padding: 3px;
     min-width: 170px; 
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 251, 251);
     cursor: pointer;
-    background-color:  rgba(219, 219, 153, 0.953);
+    background-color:  rgba(219, 219, 153, 0.484);
 }
-input[type=button]:hover{
+#inicio:hover{
     padding: 2px;
 }
 #inicioJ{
     position: absolute;
-    width: 55%;
+    width:56%;
     z-index: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 20px;
+
 }
+
 table{
-    width: 60%;
-    min-width: 250px;
-    height: 40vh;
-    min-height: 200px;;
+    width: 45%;
+    min-width: 290px;
+    height: 38vh;
+    min-height: 180px;;
     position: absolute;
-    top: 50%;
+     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); 
     border-collapse: collapse;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.544);
 
@@ -117,28 +111,63 @@ tr{
 }  
 
 #vez{
-    line-height: 50px;
-    width: 40px;
-    height: 34px;
+    width: 38px;
+    height: 30px;
     background-color:  rgba(243, 243, 226, 0.738);
     text-align: center;
     border: 1px solid black;
     text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.315);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.464);
+    margin-top: auto;
 }
-@media(max-width:800px) {
+#final{
+    display: none;
+}
+
+ 
+ #f {
+    position: absolute;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.912);
+    height: 100vh;
+    width: 100%;
+ }
+ #f div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+
+ }
+
+#final h2{
+    color: white;
+    font-size: 2em;
+}
+#final button{
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media(max-width:600px) {
+
     input[type=text]{
         font-size: 1em;
     }
     i{
         font-size: 1.6em;
     }
-    section{
-        width: 90%;
-    }  
-    table{
-        left: 70%;
+    #boas{
+        width: 99%;
+    }
+
+     table{
+        left: 80%;
 
     }
-   
+    #inicioJ{
+        left:35%;
+
+    }
+    
 }
