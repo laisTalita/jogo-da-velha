@@ -13,6 +13,7 @@ body{
     position: relative;
     background-color:var(--cor1) ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
 }
 #boas_vindas{
     border-radius: 30px;
@@ -140,7 +141,7 @@ tr{
  }
 
 #final h2{
-    color: white;
+    color: var(--cor2);
     font-size: 1.6em;
 }
 #final button{
