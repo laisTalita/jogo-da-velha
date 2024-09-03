@@ -11,11 +11,11 @@
         function atualizaVez() {
             if (jogadorA=='X') {
                  vez.innerHTML=`<i class='bx bx-x'></i>`
-                 vez.style.backgroundColor='rgba(60, 78, 12, 0.446)'
+                 vez.style.backgroundColor='rgba(60, 78, 12, 0.697)'
                  nomJ =n1
             }else{
                 vez.innerHTML=`<i class='bx bx-radio-circle'></i>`
-                vez.style.backgroundColor=' rgba(79, 17, 17, 0.469)'
+                vez.style.backgroundColor=' rgba(105, 14, 14, 0.697)'
                 nomJ=n2
             }
         }
@@ -71,11 +71,11 @@
                 if (this.innerHTML === '' && !ganhou) {
                     if (jogadorA==='X') {
                     this.innerHTML = `<i class="bx bx-x"></i>`
-                    this.style.backgroundColor=' rgba(60, 78, 12, 0.446)'
+                    this.style.backgroundColor='rgba(60, 78, 12, 0.697)'
                     
                    }else{
                     this.innerHTML ='<i class="bx bx-radio-circle"></i>'
-                    this.style.backgroundColor=' rgba(79, 17, 17, 0.469)'
+                    this.style.backgroundColor='rgba(105, 14, 14, 0.697)'
                    }
                     verificaGanhador(); 
                     if (!ganhou) {
