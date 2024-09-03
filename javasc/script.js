@@ -34,26 +34,33 @@
                 var[a,b,c] =combinacao
                 if (tds[a].innerHTML ===tds[b].innerHTML && tds[b].innerHTML === tds[c].innerHTML && tds[a].innerHTML !=='') {
                     ganhou = true
-                    exibirTelaF(`${nomJ} ganhou`)
-                    return   
+                    if (nomJ == '') {
+                        exibirTelaF(` O ( ${jogadorA} ) ganhou`)
+                        
+                    }
+                    else{
+                        exibirTelaF(`${nomJ} ganhou`)
+                    return  
+
+                    }
+                      
                 }
             }
             if ([...tds].every(cell=> cell.innerHTML!=='')) {
                 ganhou =true
                 exibirTelaF(`empate`)
-                
             }
         }
 
         function exibirTelaF(mensagem){
-            document.getElementById('boas').style.display='none'
+            document.getElementById('boas_vindas').style.display='none'
             document.getElementById('result').innerHTML =mensagem
             document.getElementById('final').style.display='block'
 
         }
        
         function desap() {
-        var boas = document.getElementById('boas');
+        var boas = document.getElementById('boas_vindas');
         boas.style.display = 'none'; 
         n1=j1.value
         n2=j2.value
