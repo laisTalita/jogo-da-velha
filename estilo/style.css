@@ -5,13 +5,13 @@
 :root{
    --cor1: rgba(245, 245, 206, 0.953);
    --cor2: rgb(253, 251, 251);
-   --cor3: rgba(220, 220, 147, 0.762);
+   --cor3: rgba(197, 197, 103, 0.762);
 }
 
 body{
     height: 100vh;
     position: relative;
-    background-color:var(--cor1) ;
+    /* background-color:rgb(252, 219, 240) ; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
@@ -101,9 +101,7 @@ table{
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.544);
 
 }
-tr{
-    background-color:var(--cor3);
-}
+
 .color{
     width: 100px;
     height: 100px;
